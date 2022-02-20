@@ -1,0 +1,11 @@
+{
+	"name": "mernstack_tickets",
+	"version": "1.0.0",
+	"description": "Support tickets app",
+	"main": "server.js",
+	"scripts": {
+		"start": "node backend/server.js"
+	},
+	"author": "Romulo Roriz",
+	"license": "MIT"
+}
