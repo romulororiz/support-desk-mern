@@ -72,11 +72,32 @@ const loginUser = asyncHandler(async (req, res) => {
 // @route /api/users/me
 // @access private
 const getMe = asyncHandler(async (req, res) => {
-	res.status(200).json(req.user);
+	const user = {
+		id: req.user._id,
+		email: req.user.email,
+		name: req.user.name,
+	};
+
+	res.status(200).json(user);
+});
+
+// @desc Get list of users
+// @route /api/users/
+// @access private
+const getUsers = asyncHandler(async (req, res) => {
+	if (req.user.isAdmin) {
+		const users = await User.find();
+		res.status(200).json(users);
+	} else {
+		res.status(401);
+		throw new Error('Not Authorized');
+	}
+	return;
 });
 
 module.exports = {
 	registerUser,
 	loginUser,
 	getMe,
+	getUsers,
 };
