@@ -117,6 +117,14 @@ h3 {
 
 .form-group {
 	margin-bottom: 10px;
+	position: relative;
+}
+
+.form-group i {
+	position: absolute;
+	font-size: 20px;
+	top: 8px;
+	right: 15px;
 }
 
 .form-group input,
