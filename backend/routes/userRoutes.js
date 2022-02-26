@@ -9,9 +9,10 @@ const {
 const protectRoute = require('../middleware/authMiddleware');
 
 // Coming from the controller
-router.post('/', registerUser);
-router.post('/login', loginUser);
-router.get('/', protectRoute, getUsers);
-router.get('/me', protectRoute, getMe);
+router
+	.post('/', registerUser)
+	.post('/login', loginUser)
+	.get('/', protectRoute, getUsers)
+	.get('/me', protectRoute, getMe);
 
 module.exports = router;
