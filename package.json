@@ -24,9 +24,11 @@
 		"express": "^4.17.3",
 		"express-async-handler": "^1.2.0",
 		"jsonwebtoken": "^8.5.1",
-		"mongoose": "^6.2.3"
+		"mongoose": "^6.2.3",
+		"webpack": "^5.69.1"
 	},
 	"devDependencies": {
+		"case-sensitive-paths-webpack-plugin": "^2.4.0",
 		"nodemon": "^2.0.15"
 	}
 }
