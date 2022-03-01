@@ -3,6 +3,10 @@
 	"version": "1.0.0",
 	"description": "Support tickets app",
 	"main": "server.js",
+	"engines": {
+		"node": "15x",
+		"npm": "7.7.5"
+	},
 	"scripts": {
 		"start": "node backend/server.js",
 		"server": "nodemon backend/server.js",
