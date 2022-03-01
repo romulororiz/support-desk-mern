@@ -2,11 +2,7 @@ import { useEffect, useState } from 'react';
 import { FaPlus, FaMinus } from 'react-icons/fa';
 import { useSelector, useDispatch } from 'react-redux';
 import { getTicket, reset, closeTicket } from '../features/tickets/ticketSlice';
-import {
-	getNotes,
-	reset as notesReset,
-	createNote,
-} from '../features/notes/noteSlice';
+import { getNotes, createNote } from '../features/notes/noteSlice';
 import { toast } from 'react-toastify';
 import Modal from 'react-modal';
 import { useParams, useNavigate } from 'react-router-dom';
