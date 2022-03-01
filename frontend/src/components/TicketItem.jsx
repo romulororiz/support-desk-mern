@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function TicketItem({ ticket }) {
 	return (
 		<div className='ticket'>
-			<div>{new Date(ticket.createdAt).toLocaleString('de-CH')}</div>
+			<div>{new Date(ticket.createdAt).toLocaleString('de-CH').slice(0, -3)}</div>
 			<div>{ticket.product}</div>
 			<div className={`status status-${ticket.status}`}>{ticket.status}</div>
 			<Link to={`/ticket/${ticket._id}`} className='btn btn-reverse btn-sm'>
