@@ -6,7 +6,7 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
-import NewTicket from './pages/newTicket';
+import NewTicket from './pages/NewTicket';
 import PrivateRoute from './components/PrivateRoute';
 import Tickets from './pages/Tickets';
 import Ticket from './pages/Ticket';
